@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: graphql-spring
+  graphql:
+    graphiql.enabled: true
+    graphiql.path: /graphiql
+  datasource:
+    url: jdbc:h2:mem:test;TRACE_LEVEL_FILE=3
+    username: sa
+    password: ''
+    driverClassName: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    #properties.hibernate.jdbc.time_zone: UTC
+    show-sql: false
+  sql:
+    init:
+      mode: embedded
+
+props:
+  artifactId: '@project.artifactId@'
+  version: '@project.version@'
+  h2:
+    version: '@h2.version@'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
