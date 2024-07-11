@@ -1,0 +1,28 @@
+type Author {
+    id: ID!
+    name: String
+    profession: Profession
+}
+
+input AuthorInput {
+    name: String
+    profession: Profession
+}
+
+enum Profession {
+    SOFTWARE_DEVELOPER
+    SOFTWARE_ARCHITECT
+    SCRUM_MASTER
+    CEO
+}
+
+type Query {
+    findOneAuthor(id: ID!): Author
+    findAllAuthor: [Author]
+}
+
+type Mutation {
+    createAuthor(author: AuthorInput): Author
+    updateAuthor(id: ID!, author: AuthorInput): Author
+    deleteAuthor(id: ID!): Boolean
+}
