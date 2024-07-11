@@ -2,6 +2,8 @@ package com.tallacoding.graphql_spring.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
@@ -21,8 +23,9 @@ public class Author {
 
     @Id
     @GeneratedValue
-    private Integer Id;
+    private Integer id;
     private String name;
+    @Enumerated(EnumType.STRING)
     private Profession profession;
 
     @ManyToMany(mappedBy = "authors")

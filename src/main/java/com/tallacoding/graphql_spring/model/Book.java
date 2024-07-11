@@ -24,7 +24,7 @@ public class Book {
 
     @Id
     @GeneratedValue
-    private Integer Id;
+    private Integer id;
     private String title;
     private String isbn;
 

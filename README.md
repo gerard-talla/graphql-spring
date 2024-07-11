@@ -1,2 +1,20 @@
-# graphql-spring
+# Graphql-Spring
 Demo project for Graphql - Java - Spring Boot
+
+## Authors
+* **Gerard Talla Tchano** - [Linkedin Page](https://www.linkedin.com/in/gerard-talla-tchano-a028a8135/)
+
+## Setup
+### Requirements
+* Should use Java 17 or higher.
+* Use Maven 3.8.0 or higher
+
+### Running locally the application on commandline
+* mvn spring-boot:run
+
+### Test locally
+* With Postman   
+hghhghghg
+* With Browser <br /> 
+Just call the endpoint http://localhost:8080/graphiql
+### How to test
