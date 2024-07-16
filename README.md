@@ -17,9 +17,11 @@ Demo project for Graphql - Java - Spring Boot
   Create a new post request and select GraphQL in the body section to enable it.  
 Just have a look at the image below.
 
-![](src/main/resources/postman-graphql.png)
-
+![](src/main/resources/images/postman-graphql.png)
 
 * With Browser <br /> 
 Just call the endpoint http://localhost:8080/graphiql
+
+![](src/main/resources/images/browser-graphql.png)
+
 ### How to test
